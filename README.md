@@ -1,8 +1,6 @@
 # CIS362atMSU
 This is a collection of apps for CIS362, Mobile App Development at Missouri State University
 
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
-
 ## Getting started
 
 Each of the apps built in this repository were created in Android Studio for the Missouri State University (MSU) Mobile App Development class during the fall of 2018.
@@ -46,6 +44,7 @@ links to humans using your project. You can include links like:
 - Repository: http://github.com/MacZiegler/CIS362atMSU
 - MSU Home: http://www.missouristate.edu/
   - All reasonable efforts have been taken to comply with the Missouri State University Academic Integrity Policy: http://www.missouristate.edu/policy/Op3_01_AcademicIntegrityStudents.htm
+- Readme file inspired by: https://github.com/jehna/readme-best-practices/blob/master/README-default.md
 
 ## Licensing
 
