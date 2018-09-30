@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.tobyziegler.android.cis362atmsu"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    flavorDimensions "version"
+    productFlavors {
+        hellogoodbye {
+            dimension "version"
+            applicationId "com.tobyziegler.android.hellogoodbye"
+            versionNameSuffix "-hellogoodbye"
+        }
+        burgercaloriecounter {
+            dimension "version"
+            applicationId "com.tobyziegler.android.burgercaloriecounter"
+            versionNameSuffix "-burgercaloriecounter"
+        }
+        calculator {
+            dimension "version"
+            applicationId "com.tobyziegler.android.calculator"
+            versionNameSuffix "-calculator"
+        }
+        paintings {
+            dimension "version"
+            applicationId "com.tobyziegler.android.paintings"
+            versionNameSuffix "-paintings"
+        }
+        activitylifecycle {
+            dimension "version"
+            applicationId "com.tobyziegler.android.activitylifecycle"
+            versionNameSuffix "-activitylifecycle"
+        }
+        automotivecalculator {
+            dimension "version"
+            applicationId "com.tobyziegler.android.automotivecalculator"
+            versionNameSuffix "-automotivecalculator"
+        }
+    }
+    buildTypes {
+        debug {
+            productFlavors.hellogoodbye.buildConfigField "String", "flavor", "\"hellogoodbye\""
+            productFlavors.burgercaloriecounter.buildConfigField "String", "flavor", "\"burgercaloriecounter\""
+            productFlavors.calculator.buildConfigField "String", "flavor", "\"calculator\""
+            productFlavors.paintings.buildConfigField "String", "flavor", "\"paintings\""
+            productFlavors.activitylifecycle.buildConfigField "String", "flavor", "\"activitylifecycle\""
+            productFlavors.automotivecalculator.buildConfigField "String", "flavor", "\"automotivecalculator\""
+        }
+        release {
+            productFlavors.hellogoodbye.buildConfigField "String", "flavor", "\"hellogoodbye\""
+            productFlavors.burgercaloriecounter.buildConfigField "String", "flavor", "\"burgercaloriecounter\""
+            productFlavors.calculator.buildConfigField "String", "flavor", "\"calculator\""
+            productFlavors.paintings.buildConfigField "String", "flavor", "\"paintings\""
+            productFlavors.activitylifecycle.buildConfigField "String", "flavor", "\"activitylifecycle\""
+            productFlavors.automotivecalculator.buildConfigField "String", "flavor", "\"automotivecalculator\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
